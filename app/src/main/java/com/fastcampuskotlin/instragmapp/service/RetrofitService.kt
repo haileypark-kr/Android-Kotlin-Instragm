@@ -9,6 +9,7 @@ import retrofit2.http.POST
 class UserToken(
 	val token: String,
 	val username: String,
+	val userId: Int,
 	val error: String
 )
 

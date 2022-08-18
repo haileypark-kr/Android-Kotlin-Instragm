@@ -77,9 +77,11 @@ class JoinActivity : AppCompatActivity() {
 							val sharedPreferences = getSharedPreferences("user_info", MODE_PRIVATE)
 							val editor: SharedPreferences.Editor = sharedPreferences.edit()
 							editor.putString("token", token.token)
+							editor.putString("user_id", token.userId.toString())
 							editor.commit()
 							Toast.makeText(this@JoinActivity, "가입되었습니다.", Toast.LENGTH_LONG).show()
 
+							startActivity(Intent(this@JoinActivity, MainActivity::class.java))
 						}
 					}
 				}

@@ -24,6 +24,7 @@ class InstaSplashActivity : AppCompatActivity() {
 		if (token == null || token.isEmpty()) {
 			startActivity(Intent(this@InstaSplashActivity, LoginActivity::class.java))
 		} else {
+			startActivity(Intent(this@InstaSplashActivity, MainActivity::class.java))
 
 		}
 

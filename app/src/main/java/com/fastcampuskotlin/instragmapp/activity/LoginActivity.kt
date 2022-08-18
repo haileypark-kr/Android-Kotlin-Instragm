@@ -70,6 +70,8 @@ class LoginActivity : AppCompatActivity() {
 							Toast.makeText(this@LoginActivity, "로그인되었습니다.", Toast.LENGTH_LONG)
 								.show()
 
+							startActivity(Intent(this@LoginActivity, MainActivity::class.java))
+
 						}
 					}
 				}
